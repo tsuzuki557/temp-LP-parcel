@@ -1,0 +1,13 @@
+$redColor: #ea5b54;
+
+.container {
+	display: flex;
+  user-select: none;
+  
+  .box {
+    background-color: $redColor;
+  }
+  .test{
+  	color: green;
+  }
+}

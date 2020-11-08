@@ -1,0 +1,45 @@
+{
+  "name": "temp-LP-parcel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx parcel src/index.pug -d .temp",
+    "build": "rimraf dist && npx parcel build src/index.pug -d dist --no-source-maps --public-url ./",
+    "build:dev": "rimraf dist && npx parcel build src/index.pug --no-minify -d dist --public-url ./",
+    "browserslist": "npx browserslist"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-react"
+    ]
+  },
+  "browserslist": [
+    "last 2 Chrome versions",
+    "last 2 Firefox versions",
+    "last 2 Safari versions",
+    "last 2 Edge versions",
+    "ie >= 11",
+    "android >= 5.0",
+    "iOS >= 10"
+  ],
+  "staticFiles": {
+    "staticPath": "static",
+    "watcherGlob": "**"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/preset-react": "^7.12.5",
+    "autoprefixer": "^9.7.4",
+    "nunjucks": "^3.2.2",
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-nunjucks": "^2.2.2",
+    "parcel-plugin-static-files-copy": "^2.5.0",
+    "postcss": "^8.0.9",
+    "pug": "^3.0.0",
+    "rimraf": "^3.0.2",
+    "sass": "^1.29.0"
+  }
+}
